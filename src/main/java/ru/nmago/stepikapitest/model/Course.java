@@ -17,4 +17,8 @@ public class Course {
     public int getLearnersCount() {
         return learnersCount;
     }
+
+    public long getId() {
+        return id;
+    }
 }
