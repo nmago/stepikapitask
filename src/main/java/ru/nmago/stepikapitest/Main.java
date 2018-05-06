@@ -1,6 +1,7 @@
 package ru.nmago.stepikapitest;
 
 import ru.nmago.stepikapitest.api.StepikAPI;
+import ru.nmago.stepikapitest.exception.CannotGetCoursesException;
 import ru.nmago.stepikapitest.model.Course;
 
 import java.util.List;
@@ -21,15 +22,19 @@ public class Main {
 
         System.out.println("Загрузка..");
         StepikAPI stepikAPI = new StepikAPI(showProgress);
-        List<Course> courses = stepikAPI.getTopNCourses(N);
-
-        System.out.println("== Топ курсов ==");
-        for(int i = 0; i < courses.size(); ++i){
-            Course current = courses.get(i);
-            System.out.printf("Курс #%d\n", i + 1);
-            System.out.printf("Название: %s\n", current.getTitle());
-            System.out.printf("Всего изучающих: %d чел.\n", current.getLearnersCount());
-            System.out.println("- - -");
+        try {
+            List<Course> courses = stepikAPI.getTopNCourses(N);
+            System.out.println("\n== Топ курсов ==");
+            for(int i = 0; i < courses.size(); ++i){
+                Course current = courses.get(i);
+                System.out.printf("Курс #%d\n", i + 1);
+                System.out.printf("ID: %d\n", current.getId());
+                System.out.printf("Название: %s\n", current.getTitle());
+                System.out.printf("Всего изучающих: %d чел.\n", current.getLearnersCount());
+                System.out.println("- - -");
+            }
+        }catch (CannotGetCoursesException cgce){
+            System.out.println("Не удалось получить список курсов, причина: " + cgce.getMessage());
         }
     }
 
