@@ -2,7 +2,7 @@ package ru.nmago.stepikapitest.model;
 
 import java.util.List;
 
-public class StepicResponse {
+public class StepikResponse {
 
     private Meta meta;
     private List<Course> courses;

@@ -36,7 +36,7 @@ public class StepikAPITest {
     @Test //getting final page
     public void getTopNCoursesResponseOkFinal() throws IOException, CannotGetCoursesException{
         StepikAPI stepikAPI = new StepikAPI(true);
-        stepikAPI.setStepicApiUrl(mockWebServer.url(testServerURL).toString());
+        stepikAPI.setStepikApiUrl(mockWebServer.url(testServerURL).toString());
 
         String resp = "final/courses_200_ok_response_last";
         mockWebServer.enqueue(new MockResponse()
@@ -55,7 +55,7 @@ public class StepikAPITest {
     @Test(expected = CannotGetCoursesException.class) //getting 503 header
     public void getTopNCoursesResponse503() throws IOException, CannotGetCoursesException {
         StepikAPI stepikAPI = new StepikAPI(true);
-        stepikAPI.setStepicApiUrl(mockWebServer.url(testServerURL).toString());
+        stepikAPI.setStepikApiUrl(mockWebServer.url(testServerURL).toString());
 
         String resp = "final/courses_200_ok_response_last";
         mockWebServer.enqueue(new MockResponse()
@@ -68,7 +68,7 @@ public class StepikAPITest {
     @Test(expected = CannotGetCoursesException.class) //getting 404 header
     public void getTopNCoursesResponse404() throws IOException, CannotGetCoursesException {
         StepikAPI stepikAPI = new StepikAPI(true);
-        stepikAPI.setStepicApiUrl(mockWebServer.url(testServerURL).toString());
+        stepikAPI.setStepikApiUrl(mockWebServer.url(testServerURL).toString());
 
         String resp = "final/courses_200_ok_response_last";
         mockWebServer.enqueue(new MockResponse()
@@ -81,7 +81,7 @@ public class StepikAPITest {
     @Test //loading many pages
     public void getTopNCoursesResponseOkManyPages() throws IOException, CannotGetCoursesException{
         StepikAPI stepikAPI = new StepikAPI(true);
-        stepikAPI.setStepicApiUrl(mockWebServer.url(testServerURL).toString());
+        stepikAPI.setStepikApiUrl(mockWebServer.url(testServerURL).toString());
 
         String resp = "manyPages/courses_200_ok_response";
         mockWebServer.enqueue(new MockResponse()
