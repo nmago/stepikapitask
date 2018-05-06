@@ -1,0 +1,53 @@
+{"meta": {
+    "page": 268,
+    "has_next": false,
+    "has_previous": true
+  },
+  "courses": [
+    {
+      "id": 19,
+      "summary": "Haskell for Kids",
+      "cover": "/media/cache/images/courses/10/cover/07b1bea59a7f80497e4a2983b2bce0f1.png",
+      "description": "Based on <a href=\"http://www.aleax.it/goo_py4prog.pdf\">the presentation</a> by Alex Martelli.\r\nCourse is released under <a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons BY-SA</a>.\r\n\r\nPython 3\r\n\r\nFor:\r\n<ul>\r\n<li>mildly to very experienced programmers in 1 (or, better, more) of Java, C++, C, Perl, ...</li>\r\n<li>no previous exposure to Python needed  a little bit can't hurt</li>\r\n<li>if you already know Python well, you will probably end up rather bored! -)</li>\r\n<li>ready for some very fast & technical parts</li>\r\n<li>as well as some more relaxed ones :-)</li>\r\n</ul>\r\n\r\nYou will learn:\r\n<ul>\r\n<li>most aspects of Python programming language</li>\r\n<li>many common ideoms</li>\r\n<li>grasp of tools and libraries</li>\r\n</ul>\r\n\r\nIncomplete Russian translation is available <a href=\"/21\">here</a>.",
+      "total_units": 8,
+      "learners_count": 3644,
+      "language": "en",
+      "title": "Python for Programmers",
+      "slug": "Python-for-Programmers-10"
+    },
+    {
+      "id": 20,
+      "summary": "Dont look at this course",
+      "cover": "/media/cache/images/courses/10/cover/07b1bea59a7f80497e4a2983b2bce0f1.png",
+      "description": "Based on <a href=\"http://www.aleax.it/goo_py4prog.pdf\">the presentation</a> by Alex Martelli.\r\nCourse is released under <a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons BY-SA</a>.\r\n\r\nPython 3\r\n\r\nFor:\r\n<ul>\r\n<li>mildly to very experienced programmers in 1 (or, better, more) of Java, C++, C, Perl, ...</li>\r\n<li>no previous exposure to Python needed  a little bit can't hurt</li>\r\n<li>if you already know Python well, you will probably end up rather bored! -)</li>\r\n<li>ready for some very fast & technical parts</li>\r\n<li>as well as some more relaxed ones :-)</li>\r\n</ul>\r\n\r\nYou will learn:\r\n<ul>\r\n<li>most aspects of Python programming language</li>\r\n<li>many common ideoms</li>\r\n<li>grasp of tools and libraries</li>\r\n</ul>\r\n\r\nIncomplete Russian translation is available <a href=\"/21\">here</a>.",
+      "total_units": 8,
+      "learners_count": 66,
+      "language": "en",
+      "title": "Another course",
+      "slug": "Python-for-Programmers-10"
+    },
+    {
+      "id": 21,
+      "summary": "Test course",
+      "cover": "/media/cache/images/courses/10/cover/07b1bea59a7f80497e4a2983b2bce0f1.png",
+      "description": "Based on <a href=\"http://www.aleax.it/goo_py4prog.pdf\">the presentation</a> by Alex Martelli.\r\nCourse is released under <a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons BY-SA</a>.\r\n\r\nPython 3\r\n\r\nFor:\r\n<ul>\r\n<li>mildly to very experienced programmers in 1 (or, better, more) of Java, C++, C, Perl, ...</li>\r\n<li>no previous exposure to Python needed  a little bit can't hurt</li>\r\n<li>if you already know Python well, you will probably end up rather bored! -)</li>\r\n<li>ready for some very fast & technical parts</li>\r\n<li>as well as some more relaxed ones :-)</li>\r\n</ul>\r\n\r\nYou will learn:\r\n<ul>\r\n<li>most aspects of Python programming language</li>\r\n<li>many common ideoms</li>\r\n<li>grasp of tools and libraries</li>\r\n</ul>\r\n\r\nIncomplete Russian translation is available <a href=\"/21\">here</a>.",
+      "total_units": 8,
+      "learners_count": 9653,
+      "language": "en",
+      "title": "Test course",
+      "slug": "Python-for-Programmers-10"
+    },
+    {
+      "id": 22,
+      "summary": "Most popular course 2",
+      "cover": "/media/cache/images/courses/10/cover/07b1bea59a7f80497e4a2983b2bce0f1.png",
+      "description": "Based on <a href=\"http://www.aleax.it/goo_py4prog.pdf\">the presentation</a> by Alex Martelli.\r\nCourse is released under <a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons BY-SA</a>.\r\n\r\nPython 3\r\n\r\nFor:\r\n<ul>\r\n<li>mildly to very experienced programmers in 1 (or, better, more) of Java, C++, C, Perl, ...</li>\r\n<li>no previous exposure to Python needed  a little bit can't hurt</li>\r\n<li>if you already know Python well, you will probably end up rather bored! -)</li>\r\n<li>ready for some very fast & technical parts</li>\r\n<li>as well as some more relaxed ones :-)</li>\r\n</ul>\r\n\r\nYou will learn:\r\n<ul>\r\n<li>most aspects of Python programming language</li>\r\n<li>many common ideoms</li>\r\n<li>grasp of tools and libraries</li>\r\n</ul>\r\n\r\nIncomplete Russian translation is available <a href=\"/21\">here</a>.",
+      "total_units": 8,
+      "learners_count": 88888,
+      "language": "en",
+      "title": "Most popular course",
+      "slug": "Python-for-Programmers-10"
+    }
+  ],
+  "enrollments": []
+}
