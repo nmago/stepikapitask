@@ -1,5 +1,7 @@
 # Stepic API test task
 
+[![Build status](https://travis-ci.org/nmago/stepikapitask.svg?branch=master)](https://travis-ci.org/nmago/stepikapitask/builds/375575898)
+
 ### How to build:
 
 `./gradlew build`
