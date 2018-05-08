@@ -4,6 +4,7 @@ import ru.nmago.stepikapitest.api.StepikAPI;
 import ru.nmago.stepikapitest.exception.CannotGetCoursesException;
 import ru.nmago.stepikapitest.model.Course;
 
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -13,16 +14,18 @@ public class Main {
         int N;
         boolean showProgress;
         Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Введите N: ");
-        N = scanner.nextInt();
-
-        System.out.println("Выводить прогресс? (y/n): ");
-        showProgress = scanner.next().equals("y");
-
-        System.out.println("Загрузка..");
-        StepikAPI stepikAPI = new StepikAPI(showProgress);
         try {
+            System.out.println("Введите N: ");
+            N = scanner.nextInt();
+            if(N < 1){
+                throw new InputMismatchException();
+            }
+            System.out.println("Выводить прогресс? (y/n): ");
+            String progresStr = scanner.next();
+            showProgress = progresStr.equals("y") || progresStr.equals("Y");
+
+            System.out.println("Загрузка..");
+            StepikAPI stepikAPI = new StepikAPI(showProgress);
             List<Course> courses = stepikAPI.getTopNCourses(N);
             System.out.println("\n== Топ курсов ==");
             for(int i = 0; i < courses.size(); ++i){
@@ -33,6 +36,8 @@ public class Main {
                 System.out.printf("Всего изучающих: %d чел.\n", current.getLearnersCount());
                 System.out.println("- - -");
             }
+        }catch (InputMismatchException ime){
+            System.out.println("Некорректный ввод");
         }catch (CannotGetCoursesException cgce){
             System.out.println("Не удалось получить список курсов, причина: " + cgce.getMessage());
         }
